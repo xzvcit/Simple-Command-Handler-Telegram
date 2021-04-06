@@ -1,0 +1,28 @@
+{
+  "name": "simple-command-handler-telegram",
+  "version": "1.0.0",
+  "description": "simple command handler telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzvcit/Simple-Command-Handler-Telegram.git"
+  },
+  "keywords": [
+    "command",
+    "handler",
+    "telegram"
+  ],
+  "author": "xzvcit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xzvcit/Simple-Command-Handler-Telegram/issues"
+  },
+  "homepage": "https://github.com/xzvcit/Simple-Command-Handler-Telegram#readme",
+  "dependencies": {
+    "@types/node": "^14.14.37",
+    "typescript": "^4.2.3"
+  }
+}
