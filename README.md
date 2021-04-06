@@ -6,18 +6,20 @@ let commandHandler = CoreCommandHandler.init([
             key: '👥 Active accounts',
             void: (ctx) => getActiveAccounts(ctx)
         },
-        {
-            key: '💠 Add account',
-            void: (ctx) => ctx.scene.enter('addNewAccountScene')
-        },
-        {
-            key: '◀️ Back',
-            void: (ctx) => ctx.scene.enter('adminMenuScene')
-        }
+        [
+            {
+                key: '💠 Add account',
+                void: (ctx) => ctx.scene.enter('addNewAccountScene')
+            },
+            {
+                key: '◀️ Back',
+                void: (ctx) => ctx.scene.enter('adminMenuScene')
+            }
+        ]
 ]);
 ```
 
-#### ⌨️Showing the keyboard
+#### ⌨️ Showing the keyboard
 #
 ```js
 scene.enter((ctx) => {
