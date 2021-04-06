@@ -1,4 +1,4 @@
-##### 🤖 Initialization and rule declarations
+#### 🤖 Initialization and rule declarations
 #
 ```js
 let commandHandler = CoreCommandHandler.init([
@@ -17,20 +17,20 @@ let commandHandler = CoreCommandHandler.init([
 ]);
 ```
 
-##### ⌨️Showing the keyboard
+#### ⌨️Showing the keyboard
 #
 ```js
 scene.enter((ctx) => {
     ctx.reply('Choose the category', Markup.keyboard(commandHandler.getKeyboardButtons()).resize().extra());
 });
 ```
-##### 💨 From the receiving point to the handler
+#### 💨 From the receiving point to the handler
 #
 ```js
-scene.on('text', async (ctx: any) => commandHandler.handle(ctx));
+scene.on('text', (ctx: any) => commandHandler.handle(ctx));
 ```
 
-##### ⚠️ Command not found
+#### ⚠️ Command not found
 * As an argument for this method, you can use any function and take **ctx**
 ```js
 commandHandler.setOnNotFound((ctx) => ctx.reply('🤖 I can\'t execute this command'));
